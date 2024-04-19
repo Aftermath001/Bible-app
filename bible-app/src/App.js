@@ -99,11 +99,11 @@ function App() {
     //  Random Bible Verse
     let i = 0;
     // All Books in the bible
-    if (searchFilter === 1) i = Math.floor(Math.random()*65 + 1); 
+    if (searchFilter == 1) i = Math.floor(Math.random()*65 + 1); 
     // Old Testament Books
-    if (searchFilter === 2) i = Math.floor(Math.random()*38 + 1); 
+    if (searchFilter == 2) i = Math.floor(Math.random()*38 + 1); 
     // New Testament Books
-    if (searchFilter === 3) i = Math.floor(Math.random()*26 + 38); 
+    if (searchFilter == 3) i = Math.floor(Math.random()*26 + 38); 
    
     let Biblebook = bible[i]
     let chapter = Math.floor(Math.random()*Biblebook.chapters + 1)
